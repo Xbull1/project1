@@ -265,6 +265,7 @@ html {
   border-radius: 50px;
 }
 .main .lst-service {
+  position: relative;
   display: flex;
   flex-direction: row;
   margin: 0px 0px 24px 16px;
@@ -276,6 +277,18 @@ html {
   text-align: center;
   white-space: nowrap;
   scrollbar-width: none;
+}
+.main .lst-service:after {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 15px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.9);
+  filter: blur(4px);
+  pointer-events: none;
+  z-index: 1;
 }
 .main .lst-service::-webkit-scrollbar {
   display: none;
@@ -395,7 +408,6 @@ html {
 @media (min-width: 1000px) {
   .main .content__right .content__decorative-image {
     width: 100%;
-    background-size: cover;
     height: 100%;
     max-width: 611px;
   }
@@ -409,6 +421,9 @@ html {
   }
   .main .title {
     margin-top: 41px;
+  }
+  .main .lst-service:after {
+    display: none;
   }
 }
 
