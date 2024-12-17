@@ -412,7 +412,7 @@ html {
     max-width: 611px;
   }
 }
-@media (min-width: 1130px) {
+@media (min-width: 1120px) {
   .main .title .title__right {
     display: flex;
   }
