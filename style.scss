@@ -15,10 +15,10 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: inherit;}
 @font-face {
   font-family: 'TT Lakes Regular';
-  src: url('/fonts/TTLakes-Regular.eot');
-  src: url('/fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
-  url('/fonts/TTLakes-Regular.woff') format('woff'),
-  url('/fonts/TTLakes-Regular.ttf') format('truetype');
+  src: url('fonts/TTLakes-Regular.eot');
+  src: url('fonts/TTLakes-Regular.eot?#iefix') format('embedded-opentype'),
+  url('fonts/TTLakes-Regular.woff') format('woff'),
+  url('fonts/TTLakes-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
