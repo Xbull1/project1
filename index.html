@@ -3,109 +3,176 @@
     <meta charset="UTF-8">
     <title>тест</title>
     <link href="style.css" rel="stylesheet"/>
+    <script src="script.js" defer></script>
     <meta content="text/html;charset=UTF-8" http-equiv="Content-type"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-<header class="header">
-<nav class="nav-bar">
-
-    <div class="nav-bar__left-menu">
-    <div class="nav-bar__burger">
-        <button class="burger-button" aria-label="Menu">
-            <img src="img/icon.svg" alt="">
-        </button>
-    </div>
-    <div class="nav-bar__logo"></div>
-
-    </div>
-    <div class="nav-bar__right-menu">
-
-       <div class="nav-bar__telephone">
-           <button class="telephone-button" aria-label="Telephone button">
-               <img src="img/telephone.svg" alt="">
-           </button>
-       </div>
-
-        <div class="nav-bar__messages">
-            <button class="messages-button" aria-label="messages button">
-                <img src="img/messages.svg" alt="">
-            </button>
+<div class="app">
+<div class="left-side">
+    <div class="burger-menu">
+        <div class="container-top">
+            <div class="burger-menu__header">
+                <div class="burger-menu__header-left">
+                    <button class="burger-menu__exit-button" aria-label="кнопка выхода"></button>
+                    <div class="burger-menu__logo"></div>
+                </div>
+                <div class="burger-menu__header-right">
+                    <div class="burger-menu__search">
+                        <button class="burger-menu__search-button" aria-label="кнопка поиска"></button>
+                    </div>
+                </div>
+            </div>
+            <nav class="burger-menu__main">
+                <ul>
+                    <li class="burger-menu__item">
+                        <a href="#" class="burger-menu__link" tabindex="0">Ремонт техники</a>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a href="#" class="burger-menu__link" tabindex="0">Услуги и сервисы</a>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a href="#" class="burger-menu__link" tabindex="0">Корпоративным клиентам</a>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a href="#" class="burger-menu__link" tabindex="0">Продавцам техники</a>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a href="#" class="burger-menu__link" tabindex="0">Партнерам</a>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a href="#" class="burger-menu__link" tabindex="0">Производителям</a>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a href="#" class="burger-menu__link" tabindex="0">Наши сервисные центры</a>
+                    </li>
+                    <li class="burger-menu__item">
+                        <a href="#" class="burger-menu__link" tabindex="0">Контакты</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-
-        <div class="nav-bar__contact">
-            <button class="contact-button" aria-label="contact button">
-                <img src="img/contact.svg" alt="">
-            </button>
-        </div>
-
-    <div class="nav-bar__repair">
-        <button class="repair-button" aria-label="Repair button">
-            <img src="img/Grouprepair.svg" alt="">
-        </button>
-    </div>
-
-    <div class="nav-bar__check">
-        <button class="check-status-button" aria-label="Check status button">
-            <img src="img/repair.svg" alt="">
-        </button>
-    </div>
-    </div>
-</nav>
-</header>
-
-<main class="main">
-<div class="title">
-    <div class="title__left">
-        <div class="title__effect"></div>
-        <span class="title__text">Услуги и сервисы</span>
-    </div>
-    <div class="title__right">
-        <div class="title__repair">
-            <button class="title__repair-button" aria-label="Repair button">
-                <span class="title__repair-button-text" >Оставить заявку</span>
-                <span class="title__repair-button-logo-background">
-                    <img src="img/Grouprepair.svg" alt="">
-                </span>
-
-            </button>
-        </div>
-        <div class="title__check">
-            <button class="title__check-status-button" aria-label="Check status button">
-                <span class="title__check-status-button-text" >Статус ремонта</span>
-                <span class="title__check-status-button-logo-background">
-                <img src="img/repair.svg" alt="">
-                </span>
-            </button>
+        <div class="container-bottom">
+            <div class="burger-menu__bottom">
+                <div class="burger-menu__bottom-button">
+                    <button class="telephone-button" aria-label="Telephone button"></button>
+                    <button class="messages-button" aria-label="messages button"></button>
+                    <button class="contact-button" aria-label="contact button"></button>
+                </div>
+                <div class="burger-menu__bottom-mail">
+                    <a href="mailto:mail@cps.com">mail@cps.com</a>
+                </div>
+                <div class="burger-menu__bottom-telephone">
+                    <a href="tel:+88008908900">8 800 890 8900</a>
+                </div>
+                <div class="burger-menu__bottom-languages">
+                    <button class="burger-menu__bottom-languages-item--active" lang="RU">RU</button>
+                    <div class="burger-menu__bottom-languages-item" lang="EN">EN</div>
+                    <div class="burger-menu__bottom-languages-item" lang="CH">CH</div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
- <div class="lst-service">
-     <div class="lst-service__repaired">Ремонтируемые бренды</div>
-     <div class="lst-service__additional-services">Ремонтируемые устройства</div>
-     <div class="lst-service__prices">Цены на услуги</div>
-     <div class="lst-service__addresses">Адреса сервисных центров</div>
-     <div class="lst-service__special-prices">Специальные цены</div>
-     <div class="lst-service__reviews">Отзывы</div>
- </div>
-<div class="content">
-    <div class="content__left">
-        <div class="content__description">
-        <span>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</br></br>
-            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
+<div class="right-side">
+<header class="header">
+    <nav class="nav-bar">
+        <div class="nav-bar__left-menu">
+            <div class="nav-bar__burger">
+                <button class="burger-button" aria-label="Menu"></button>
+            </div>
+            <div class="nav-bar__logo"></div>
 
         </div>
-        <div class="content__read-more">
-        <button class="content__read-more-button" aria-label="read more">
-        <img src="img/strelka.svg" alt="">
-        <span class="content__read-more-text">Читать далее</span>
-        </button>
+        <div class="nav-bar__right-menu">
+
+            <div class="nav-bar__telephone">
+                <button class="telephone-button" aria-label="Telephone button"></button>
+            </div>
+
+            <div class="nav-bar__messages">
+                <button class="messages-button" aria-label="messages button"></button>
+            </div>
+
+            <div class="nav-bar__contact">
+                <button class="contact-button" aria-label="contact button"></button>
+            </div>
+
+            <div class="nav-bar__repair">
+                <button class="repair-button" aria-label="Repair button"></button>
+            </div>
+
+            <div class="nav-bar__check">
+                <button class="check-status-button" aria-label="Check status button"></button>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+<main class="main">
+    <div class="title">
+        <div class="title__left">
+            <div class="title__effect"></div>
+            <span class="title__text">Услуги и сервисы</span>
+        </div>
+        <div class="title__right">
+            <div class="title__repair">
+                <button class="title__repair-button" aria-label="Repair button">
+                    <span class="title__repair-button-text" >Оставить заявку</span>
+                    <span class="title__repair-button-logo-background"></span>
+                </button>
+            </div>
+            <div class="title__check">
+                <button class="title__check-status-button" aria-label="Check status button">
+                    <span class="title__check-status-button-text" >Статус ремонта</span>
+                    <span class="title__check-status-button-logo-background"></span>
+                </button>
+            </div>
         </div>
     </div>
-     <div class="content__right">
-         <div class="content__decorative-image"></div>
+    <nav class="lst-service" aria-label="Список услуг">
+        <ul class="lst-service__list">
+            <li class="lst-service__repaired">
+                <a href="#" class="lst-service__link active" aria-label="Ремонтируемые бренды">Ремонтируемые бренды</a>
+            </li>
+            <li class="lst-service__additional-services">
+                <a href="#" class="lst-service__link" aria-label="Ремонтируемые устройства">Ремонтируемые устройства</a>
+            </li>
+            <li class="lst-service__prices">
+                <a href="#" class="lst-service__link" aria-label="Цены на услуги">Цены на услуги</a>
+            </li>
+            <li class="lst-service__addresses">
+                <a href="#" class="lst-service__link" aria-label="Адреса сервисных центров">Адреса сервисных центров</a>
+            </li>
+            <li class="lst-service__special-prices">
+                <a href="#" class="lst-service__link" aria-label="Специальные цены">Специальные цены</a>
+            </li>
+            <li class="lst-service__reviews">
+                <a href="#" class="lst-service__link" aria-label="Отзывы">Отзывы</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="content__left">
+            <article class="content__description">
+        <span>Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.</br></br>
+            Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по рекомендациям и, в свою очередь, советуют нас родным и близким.</span>
+            </article>
+            <div class="content__read-more">
+                <button class="content__read-more-button" aria-label="read more">
+                    <span class="content__read-more-text">Читать далее</span>
+                </button>
+            </div>
+        </div>
+        <div class="content__right">
+            <div class="content__decorative-image">
+                <img src="img/backround.jpg" alt="информация о компании" class="content-image">
+            </div>
+        </div>
     </div>
-     </div>
 </main>
+</div>
+</div>
 </body>
 </html>
