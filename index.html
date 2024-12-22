@@ -15,7 +15,7 @@
             <div class="burger-menu__header">
                 <div class="burger-menu__header-left">
                     <button class="burger-menu__exit-button" aria-label="кнопка выхода"></button>
-                    <div class="burger-menu__logo"></div>
+                    <img  class="burger-menu__logo" src="img/logo.svg" alt="логотип компании">
                 </div>
                 <div class="burger-menu__header-right">
                     <div class="burger-menu__search">
@@ -66,9 +66,14 @@
                     <a href="tel:+88008908900">8 800 890 8900</a>
                 </div>
                 <div class="burger-menu__bottom-languages">
-                    <button class="burger-menu__bottom-languages-item--active" lang="RU">RU</button>
-                    <div class="burger-menu__bottom-languages-item" lang="EN">EN</div>
-                    <div class="burger-menu__bottom-languages-item" lang="CH">CH</div>
+                    <input type="radio" id="lang-ru" name="language" class="burger-menu__radio" checked>
+                    <label for="lang-ru" class="burger-menu__bottom-languages-item burger-menu__bottom-languages-item--active">RU</label>
+
+                    <input type="radio" id="lang-en" name="language" class="burger-menu__radio">
+                    <label for="lang-en" class="burger-menu__bottom-languages-item">EN</label>
+
+                    <input type="radio" id="lang-ch" name="language" class="burger-menu__radio">
+                    <label for="lang-ch" class="burger-menu__bottom-languages-item">CH</label>
                 </div>
             </div>
         </div>
@@ -81,7 +86,9 @@
             <div class="nav-bar__burger">
                 <button class="burger-button" aria-label="Menu"></button>
             </div>
-            <div class="nav-bar__logo"></div>
+            <div class="nav-bar__logo">
+                <img  src="img/logo.svg" alt="логотип компании">
+            </div>
 
         </div>
         <div class="nav-bar__right-menu">
@@ -170,6 +177,62 @@
                 <img src="img/backround.jpg" alt="информация о компании" class="content-image">
             </div>
         </div>
+    </div>
+    <div class="brand-menu">
+        <div class="brand-menu__header">Ремонт техники различных брендов</div>
+        <nav class="brand-menu__body">
+            <ul class="brand-menu__list">
+                <li class="brand-menu__item">
+                    <img class="brand-menu__item-img" src="img/lenovo.svg" alt="lenovo">
+                    <a href="#" class="brand-menu__item-button"></a>
+                </li>
+                <li class="brand-menu__item">
+                    <img class="brand-menu__item-img" src="img/samsung.svg" alt="samsung">
+                    <a href="#" class="brand-menu__item-button"></a>
+                </li>
+                <li class="brand-menu__item">
+                    <img class="brand-menu__item-img" src="img/apple.svg" alt="apple">
+                    <a href="#" class="brand-menu__item-button"></a>
+                </li>
+                <li class="brand-menu__item">
+                    <img class="brand-menu__item-img" src="img/ViewSonic.svg" alt="viewsonic">
+                    <a href="#" class="brand-menu__item-button"></a>
+                </li>
+                <li class="brand-menu__item">
+                    <img class="brand-menu__item-img" src="img/bosch.svg" alt="bosch">
+                    <a href="#" class="brand-menu__item-button"></a>
+                </li>
+                <li class="brand-menu__item">
+                    <img class="brand-menu__item-img" src="img/hp.svg" alt="hp">
+                    <a href="#" class="brand-menu__item-button"></a>
+                </li>
+                <li class="brand-menu__item">
+                    <img class="brand-menu__item-img" src="img/acer.svg" alt="acer">
+                    <a href="#" class="brand-menu__item-button"></a>
+                </li>
+                <li class="brand-menu__item">
+                    <img class="brand-menu__item-img" src="img/sony.svg" alt="sony">
+                    <a href="#" class="brand-menu__item-button"></a>
+                </li>
+                <li class="brand-menu__item">
+                    <img class="brand-menu__item-img" src="img/lenovo.svg" alt="lenovo">
+                    <a href="#" class="brand-menu__item-button"></a>
+                </li>
+                <li class="brand-menu__item">
+                    <img class="brand-menu__item-img" src="img/samsung.svg" alt="samsung">
+                    <a href="#" class="brand-menu__item-button"></a>
+                </li>
+                <li class="brand-menu__item">
+                    <img class="brand-menu__item-img" src="img/apple.svg" alt="apple">
+                    <a href="#" class="brand-menu__item-button"></a>
+                </li>
+            </ul>
+        </nav>
+
+
+
+
+
     </div>
 </main>
 </div>

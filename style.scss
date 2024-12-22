@@ -101,7 +101,6 @@ html {
           width:97px;
           height:51px;
           display: flex;
-          background-image: url("./img/logo.svg");
         }
       }
       .burger-menu__header-right{
@@ -285,16 +284,18 @@ html {
       .burger-menu__bottom-languages{
         display: flex;
         margin-bottom: 32px;
-        .burger-menu__bottom-languages-item--active{
-          color: #7e7e82;
-          background: inherit;
+        .burger-menu__radio {
+          display: none;
         }
-        .burger-menu__bottom-languages-item,.burger-menu__bottom-languages-item--active{
+        .burger-menu__bottom-languages-item {
+          cursor: pointer;
+          margin-right: 7px;
           font-family: "TT Lakes Medium";
+          font-size: 16px;
           line-height: 24px;
         }
-        .burger-menu__bottom-languages-item{
-          margin-left: 7px;
+        .burger-menu__radio:checked + .burger-menu__bottom-languages-item {
+          color: #7e7e82;
         }
       }
     }
@@ -342,7 +343,7 @@ html {
       width:97px;
       height:51px;
       display: flex;
-      background-image: url("./img/logo.svg");
+
       &:after{
         content: "";
         position: absolute;
@@ -707,7 +708,8 @@ html {
   }
   .content{
     height: 322px;
-
+    padding-bottom:24px ;
+    border-bottom: 1px #d9fff5 solid;
   }
   .content__left{
     .content__description{
@@ -745,8 +747,54 @@ html {
       height: 176px;
       .content-image{
         max-width: 100%;
+        max-height: 100%;
       }
     }
+  }
+
+  .brand-menu{
+    margin-top: 16px;
+
+    .brand-menu__header{
+      width: 100%;
+      padding-left: 32px;
+      font-family: 'TT Lakes Regular';
+      font-size: 16px;
+      line-height: 24px;
+      color: #7e7e82;
+      text-transform: uppercase;
+      margin-bottom: 40px;
+    }
+    .brand-menu__body{
+      display: flex;
+      margin: 0 0 16px 16px;
+      .brand-menu__list{
+        display: flex;
+        overflow-y: scroll;
+        .brand-menu__item{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          min-width: 240px;
+          height: 72px;
+          background-color: #ffffff;
+          padding: 16px;
+          margin-right: 16px;
+          .brand-menu__item-button{
+            width: 40px;
+            height: 40px;
+            border: 2px solid #ff3e79;
+            border-radius: 20px;
+            background-image: url("img/dropdown.svg");
+            background-size: auto;
+            background-position: center;
+            background-repeat: no-repeat;
+          }
+        }
+      }
+
+    }
+
   }
 }
 
