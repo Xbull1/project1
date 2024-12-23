@@ -2,8 +2,11 @@
 <head>
     <meta charset="UTF-8">
     <title>тест</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link href="style.css" rel="stylesheet"/>
-    <script src="script.js" defer></script>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="swiper.js"></script>
     <meta content="text/html;charset=UTF-8" http-equiv="Content-type"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -180,59 +183,58 @@
     </div>
     <div class="brand-menu">
         <div class="brand-menu__header">Ремонт техники различных брендов</div>
-        <nav class="brand-menu__body">
-            <ul class="brand-menu__list">
-                <li class="brand-menu__item">
+        <nav class="brand-menu__body swiper">
+            <ul class="brand-menu__list swiper-wrapper">
+                <li class="brand-menu__item swiper-slide">
                     <img class="brand-menu__item-img" src="img/lenovo.svg" alt="lenovo">
                     <a href="#" class="brand-menu__item-button"></a>
                 </li>
-                <li class="brand-menu__item">
+                <li class="brand-menu__item swiper-slide">
                     <img class="brand-menu__item-img" src="img/samsung.svg" alt="samsung">
                     <a href="#" class="brand-menu__item-button"></a>
                 </li>
-                <li class="brand-menu__item">
+                <li class="brand-menu__item swiper-slide">
                     <img class="brand-menu__item-img" src="img/apple.svg" alt="apple">
                     <a href="#" class="brand-menu__item-button"></a>
                 </li>
-                <li class="brand-menu__item">
+                <li class="brand-menu__item swiper-slide">
                     <img class="brand-menu__item-img" src="img/ViewSonic.svg" alt="viewsonic">
                     <a href="#" class="brand-menu__item-button"></a>
                 </li>
-                <li class="brand-menu__item">
+                <li class="brand-menu__item swiper-slide">
                     <img class="brand-menu__item-img" src="img/bosch.svg" alt="bosch">
                     <a href="#" class="brand-menu__item-button"></a>
                 </li>
-                <li class="brand-menu__item">
+                <li class="brand-menu__item swiper-slide">
                     <img class="brand-menu__item-img" src="img/hp.svg" alt="hp">
                     <a href="#" class="brand-menu__item-button"></a>
                 </li>
-                <li class="brand-menu__item">
+                <li class="brand-menu__item swiper-slide">
                     <img class="brand-menu__item-img" src="img/acer.svg" alt="acer">
                     <a href="#" class="brand-menu__item-button"></a>
                 </li>
-                <li class="brand-menu__item">
+                <li class="brand-menu__item swiper-slide">
                     <img class="brand-menu__item-img" src="img/sony.svg" alt="sony">
                     <a href="#" class="brand-menu__item-button"></a>
                 </li>
-                <li class="brand-menu__item">
+                <li class="brand-menu__item swiper-slide">
                     <img class="brand-menu__item-img" src="img/lenovo.svg" alt="lenovo">
                     <a href="#" class="brand-menu__item-button"></a>
                 </li>
-                <li class="brand-menu__item">
+                <li class="brand-menu__item swiper-slide">
                     <img class="brand-menu__item-img" src="img/samsung.svg" alt="samsung">
                     <a href="#" class="brand-menu__item-button"></a>
                 </li>
-                <li class="brand-menu__item">
+                <li class="brand-menu__item swiper-slide">
                     <img class="brand-menu__item-img" src="img/apple.svg" alt="apple">
                     <a href="#" class="brand-menu__item-button"></a>
                 </li>
             </ul>
+            <div class="swiper-pagination"></div>
         </nav>
-
-
-
-
-
+        <button class="brand-menu__toggle">
+            <span class="toggle-text">Показать все</span>
+        </button>
     </div>
 </main>
 </div>

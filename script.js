@@ -30,3 +30,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleButton = document.querySelector('.brand-menu__toggle');
+    const brandMenuBody = document.querySelector('.brand-menu__body');
+
+    let isExpanded = false;
+
+    toggleButton.addEventListener('click', function () {
+        isExpanded = !isExpanded;
+
+        if (isExpanded) {
+            brandMenuBody.style.height = 'auto';
+            toggleButton.querySelector('.toggle-text').textContent = 'Скрыть';
+            toggleButton.classList.add('expanded');
+        } else {
+            brandMenuBody.style.height = '';
+            toggleButton.querySelector('.toggle-text').textContent = 'Показать все';
+            toggleButton.classList.remove('expanded');
+        }
+    });
+});
